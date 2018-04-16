@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/TokeJacobsen/ReadyOrNot/issues"
   },
-  "homepage": "https://github.com/TokeJacobsen/ReadyOrNot#readme"
+  "homepage": "https://github.com/TokeJacobsen/ReadyOrNot#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
 }
