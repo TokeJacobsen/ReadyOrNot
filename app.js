@@ -1,5 +1,5 @@
 const express = require('express');
-
+const bodyparser = require('body-parser');
 var app = express();
 
 app.listen("3000",function( err ) {
@@ -9,3 +9,14 @@ app.listen("3000",function( err ) {
     }
     console.log("Vi er online!");
 })
+
+
+// GET REQUEST
+app.get("/", function( req, res ) {
+  res.send("TEST!")
+
+})
+
+
+
+// POST REQUEST
