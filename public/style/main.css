@@ -1,0 +1,33 @@
+.btc {
+  font-size: 5em;
+  transition-duration: 0.4s;
+  border: 2px solid black;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#teacher{
+    background-color: white;
+    color: black;
+}
+
+
+#student{
+  background-color: white;
+  color: black;
+}
+
+#teacher:hover {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#student:hover{
+  background-color: #4286f4; /* blue */
+  color: white;
+}
+
+.btc-con{
+  display: flex;
+  flex-direction: column;
+}
