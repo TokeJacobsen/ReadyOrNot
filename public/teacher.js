@@ -14,6 +14,11 @@ do {
 
   window.name = person;
 
+  $.get("generate-key", function ( response ) {
+    console.log(response);
+    $("#key").append(response);
+  });
+
 }
 
 document.getElementById("name").innerHTML = window.name;

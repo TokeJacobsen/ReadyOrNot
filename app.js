@@ -4,8 +4,7 @@ var readyForStudents = false;
 const express = require('express');
 const bodyparser = require('body-parser');
 var app = express();
-
-var path = require('path');
+var keyGenerator = require("randomstring")
 
 app.use(express.static(__dirname + "/public"))
 
@@ -23,19 +22,14 @@ app.listen("3000",function( err ) {
 
 
 // GET REQUEST
-app.get("/teacher", function( req, res ) {
-  console.log("yes");
-  res.sendFile(__dirname + "/public/teacher.html");
-})
+app.get("/generate-key",function ( req, res ) {
 
+  let key = keyGenerator.generate(4);
 
+  console.log(key);
 
+  res.send(key);
 
-
-
-
-app.get("/student", function( req, res ) {
-  res.sendFile(__dirname + "/public"+"/student.html");
 })
 
 
